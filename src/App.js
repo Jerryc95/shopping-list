@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronRight, faChevronLeft, faCircle, faCheckCircle, faPlus } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
 
 function App() {
+
+  const [items, setItems] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='background'>
+      <div className='main-container'>
+        <div className='add-item-box'>
+        <div className='item-list'>
+            <div className='item-container'>
+              <div className='item'>
+
+              </div>
+
+            </div>
+
+        </div>
+
+        </div>
+
+      </div>
+
     </div>
   );
 }
